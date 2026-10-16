@@ -3,336 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMK Unggul - Berprestasi & Berkarakter</title>
+    <title>SMK Bina Nusantara - Unggul, Berkarakter & Profesional</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome untuk ikon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- TOPBAR / INFORMASI KONTAK ATAS -->
+    <div class="bg-blue-950 text-slate-300 text-xs py-2 px-4 hidden sm:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <span><i class="fa-solid fa-envelope text-blue-400 mr-1.5"></i> info@smkbinanusantara.sch.id</span>
+                <span><i class="fa-solid fa-phone text-blue-400 mr-1.5"></i> (021) 7912-3456</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-blue-400 font-medium">Akreditasi A (Unggul)</span>
+                <span class="text-slate-500">|</span>
+                <div class="flex gap-3">
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- NAVBAR -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <header class="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/30">
-                    S
+                <div class="w-11 h-11 bg-gradient-to-tr from-blue-700 to-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-600/30">
+                    BN
                 </div>
                 <div>
-                    <span class="block font-bold text-lg leading-tight text-slate-900">SMK UNGGUL</span>
-                    <span class="block text-xs text-slate-500 font-medium">Bisa & Hebat</span>
-                </div>
-            </a>
-            
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
-                <a href="#beranda" class="text-blue-600 hover:text-blue-700 transition">Beranda</a>
-                <a href="#tentang" class="text-slate-600 hover:text-blue-600 transition">Tentang</a>
-                <a href="#jurusan" class="text-slate-600 hover:text-blue-600 transition">Jurusan</a>
-                <a href="#fasilitas" class="text-slate-600 hover:text-blue-600 transition">Fasilitas</a>
-                <a href="#kontak" class="text-slate-600 hover:text-blue-600 transition">Kontak</a>
-            </nav>
-
-            <div class="hidden md:block">
-                <a href="#kontak" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-medium text-sm hover:bg-blue-700 transition shadow-md shadow-blue-600/20">
-                    Daftar Sekarang
-                </a>
-            </div>
-
-            <!-- Hamburger Menu Mobile -->
-            <button id="menu-btn" class="md:hidden text-slate-700 text-xl focus:outline-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b px-4 pt-2 pb-6 space-y-3">
-            <a href="#beranda" class="block text-slate-700 hover:text-blue-600 font-medium">Beranda</a>
-            <a href="#tentang" class="block text-slate-700 hover:text-blue-600 font-medium">Tentang</a>
-            <a href="#jurusan" class="block text-slate-700 hover:text-blue-600 font-medium">Jurusan</a>
-            <a href="#fasilitas" class="block text-slate-700 hover:text-blue-600 font-medium">Fasilitas</a>
-            <a href="#kontak" class="block text-slate-700 hover:text-blue-600 font-medium">Kontak</a>
-            <a href="#kontak" class="block text-center w-full py-2.5 rounded-xl bg-blue-600 text-white font-medium">Daftar Sekarang</a>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section id="beranda" class="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-blue-900 via-slate-900 to-indigo-950 text-white relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-semibold uppercase tracking-wider border border-blue-500/30">
-                    <i class="fa-solid fa-graduation-cap"></i> Penerimaan Peserta Didik Baru
-                </span>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                    Wujudkan Masa Depanmu Bersama <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">SMK Unggul</span>
-                </h1>
-                <p class="text-slate-300 text-base sm:text-lg max-w-xl">
-                    Sekolah kejuruan pusat keunggulan dengan fokus keahlian profesional di bidang Administrasi Perkantoran Modern dan Rekayasa Perangkat Lunak.
-                </p>
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="#jurusan" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-600/30 flex items-center gap-2">
-                        Jelajahi Jurusan <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </a>
-                    <a href="#tentang" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-white font-medium transition border border-slate-700">
-                        Tentang Sekolah
-                    </a>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="w-full h-[360px] sm:h-[420px] bg-gradient-to-tr from-blue-600 to-indigo-500 rounded-3xl p-3 shadow-2xl rotate-1 hover:rotate-0 transition duration-500">
-                    <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden flex flex-col justify-center items-center text-center p-6 relative">
-                        <i class="fa-solid fa-laptop-code text-6xl text-blue-400 mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2">Modern & Berbasis Industri</h3>
-                        <p class="text-slate-400 text-sm">Kurikulum disesuaikan dengan kebutuhan dunia kerja masa kini.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TENTANG KAMI -->
-    <section id="tentang" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Tentang Kami</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900">Mencetak Generasi Kompeten & Siap Kerja</h3>
-                <p class="text-slate-600 text-sm sm:text-base">Kami berkomitmen mendidik siswa-siswi menjadi tenaga profesional yang memiliki keahlian mendalam sesuai perkembangan zaman.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Visi</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">Menjadi lembaga pendidikan kejuruan terdepan yang menghasilkan lulusan cerdas, terampil, berkarakter, dan berdaya saing global.</p>
-                </div>
-
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-rocket"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Misi</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">Menyelenggarakan pembelajaran berbasis teknologi, menjalin kerja sama erat dengan dunia industri, serta membina akhlak mulia peserta didik.</p>
-                </div>
-
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition group">
-                    <div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-3">Keunggulan</h4>
-                    <p class="text-slate-600 text-sm leading-relaxed">Didukung pengajar profesional bersertifikasi industri, fasilitas lab modern, serta program penyaluran kerja langsung.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- JURUSAN SECTION (MPLB & PPLG) -->
-    <section id="jurusan" class="py-20 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Program Keahlian</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900">Pilihan Jurusan Unggulan</h3>
-                <p class="text-slate-600 text-sm sm:text-base">Dua konsentrasi keahlian terbaik yang dirancang untuk menjawab tantangan dunia bisnis dan industri teknologi.</p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-10">
-                <!-- JURUSAN 1: PPLG -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 flex flex-col justify-between hover:shadow-2xl transition">
-                    <div class="p-8 sm:p-10 space-y-6">
-                        <div class="flex items-center justify-between">
-                            <span class="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-wide uppercase">Teknologi Informasi</span>
-                            <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl shadow-md shadow-blue-500/30">
-                                <i class="fa-solid fa-code"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-2">PPLG</h3>
-                            <h4 class="text-blue-600 font-semibold text-sm mb-4">Pengembangan Perangkat Lunak dan GIM</h4>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Mempelajari cara merancang, membuat, menguji, dan memelihara aplikasi berbasis Web, Mobile, Desktop, serta Pemrograman Game interaktif menggunakan teknologi terkini.
-                            </p>
-                        </div>
-                        
-                        <div class="space-y-2 pt-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Peluang Karier:</span>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Software Engineer</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Web Developer</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Mobile App Creator</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Game Developer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-clock text-blue-500 mr-1"></i> Durasi Belajar: 3 Tahun</span>
-                        <a href="#kontak" class="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center gap-1">Daftar PPLG <i class="fa-solid fa-arrow-right text-xs"></i></a>
-                    </div>
-                </div>
-
-                <!-- JURUSAN 2: MPLB -->
-                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-200 flex flex-col justify-between hover:shadow-2xl transition">
-                    <div class="p-8 sm:p-10 space-y-6">
-                        <div class="flex items-center justify-between">
-                            <span class="px-4 py-1.5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold tracking-wide uppercase">Bisnis & Manajemen</span>
-                            <div class="w-12 h-12 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-xl shadow-md shadow-indigo-500/30">
-                                <i class="fa-solid fa-briefcase"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold text-slate-900 mb-2">MPLB</h3>
-                            <h4 class="text-indigo-600 font-semibold text-sm mb-4">Manajemen Perkantoran dan Layanan Bisnis</h4>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Membekali siswa dengan keahlian tata kelola administrasi perkantoran modern, korespondensi, layanan pelanggan, arsip digital, public speaking, serta manajemen acara profesional.
-                            </p>
-                        </div>
-                        
-                        <div class="space-y-2 pt-2">
-                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Peluang Karier:</span>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Administrasi Profesional</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Sekretaris</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Customer Service</span>
-                                <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-medium">Event Officer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-xs text-slate-500 font-medium"><i class="fa-solid fa-clock text-indigo-500 mr-1"></i> Durasi Belajar: 3 Tahun</span>
-                        <a href="#kontak" class="text-indigo-600 hover:text-indigo-700 font-semibold text-sm flex items-center gap-1">Daftar MPLB <i class="fa-solid fa-arrow-right text-xs"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FASILITAS -->
-    <section id="fasilitas" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Fasilitas Sekolah</h2>
-                <h3 class="text-3xl font-extrabold text-slate-900">Menunjang Proses Pembelajaran Optimal</h3>
-                <p class="text-slate-600 text-sm sm:text-base">Fasilitas lengkap dan berstandar industri untuk kenyamanan serta praktik langsung siswa.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center space-y-3 hover:border-blue-500 transition">
-                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl mx-auto flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-computer"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900">Lab Komputer PPLG</h4>
-                    <p class="text-xs text-slate-600">PC spesifikasi tinggi untuk ngoding dan desain aplikasi lancar.</p>
-                </div>
-
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center space-y-3 hover:border-indigo-500 transition">
-                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl mx-auto flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-building-user"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900">Mini Office MPLB</h4>
-                    <p class="text-xs text-slate-600">Simulasi ruang kantor modern lengkap dengan perangkat administrasi.</p>
-                </div>
-
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center space-y-3 hover:border-emerald-500 transition">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl mx-auto flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-book-open"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900">Perpustakaan Digital</h4>
-                    <p class="text-xs text-slate-600">Ribuan koleksi buku digital dan cetak untuk referensi belajar.</p>
-                </div>
-
-                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100 text-center space-y-3 hover:border-amber-500 transition">
-                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl mx-auto flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <h4 class="font-bold text-slate-900">Area Wi-Fi Cepat</h4>
-                    <p class="text-xs text-slate-600">Koneksi internet berkecepatan tinggi di seluruh area sekolah.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- KONTAK / PENDAFTARAN -->
-    <section id="kontak" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-xs font-bold uppercase tracking-widest text-blue-400">Hubungi Kami</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold">Tertarik Bergabung Bersama Kami?</h2>
-                <p class="text-slate-400 text-sm sm:text-base">
-                    Pendaftaran Peserta Didik Baru (PPDB) telah dibuka. Silakan isi formulir di samping atau kunjungi langsung kampus kami.
-                </p>
-                <div class="space-y-4 pt-2 text-sm">
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <span>Jl. Pendidikan No. 123, Kota Pelajar, Indonesia</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <span>(021) 555-0192 / +62 812-3456-7890</span>
-                    </div>
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-blue-400">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <span>info@smkungguler.sch.id</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Form Pendaftaran / Kontak -->
-            <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-xl space-y-4">
-                <h3 class="text-xl font-bold mb-2">Formulir Informasi / Pendaftaran</h3>
-                <div>
-                    <label class="block text-xs font-medium text-slate-400 mb-1">Nama Lengkap</label>
-                    <input type="text" placeholder="Masukkan nama Anda" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm focus:outline-none focus:border-blue-500 text-white">
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-slate-400 mb-1">Nomor WhatsApp</label>
-                    <input type="text" placeholder="Contoh: 08123456789" class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm focus:outline-none focus:border-blue-500 text-white">
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-slate-400 mb-1">Pilihan Jurusan</label>
-                    <select class="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm focus:outline-none focus:border-blue-500 text-white">
-                        <option>PPLG (Pengembangan Perangkat Lunak & Gim)</option>
-                        <option>MPLB (Manajemen Perkantoran & Layanan Bisnis)</option>
-                    </select>
-                </div>
-                <button onclick="alert('Terima kasih! Pesan atau formulir Anda berhasil dikirim.')" class="w-full py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-xl transition shadow-lg shadow-blue-600/30">
-                    Kirim Pendaftaran
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-500 py-8 border-t border-slate-900 text-center text-xs">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>&copy; 2026 SMK Unggul. Hak Cipta Dilindungi.</p>
-            <div class="flex gap-4 text-slate-400 text-base">
-                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-tiktok"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- SCRIPT MOBILE MENU -->
-    <script>
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
